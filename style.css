@@ -15,6 +15,10 @@ Background-web page: #F1FAFF
     padding: 0;
 }
 
+body{
+    background-color: #F1FAFF;
+}
+
 /*Menu invisible*/
 
 .invisible{

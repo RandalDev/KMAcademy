@@ -26,9 +26,19 @@ body{
 }
 
 .visible{
+
     display: initial;
 }
 
+.invisible-course{
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.visible-course{
+    opacity: 1;
+    transition: opacity 0.5s;
+}
 /**/
 
 .search-bar-mobile{
@@ -98,6 +108,7 @@ button:hover{
     box-sizing: border-box;
     border-bottom: solid 1px #12171E44;
     border-top: solid 1px #12171E44;
+
 }
 
 .menu a{
@@ -175,6 +186,7 @@ nav{
     display: flex;
     background-color: #F8F7F4;
     padding-top: 2.5em;
+    padding-bottom: 2em;
 }
 .body-text{
     display: flex;
@@ -189,6 +201,7 @@ h1{
     font-weight: 800;
     margin: 0;
     line-height: 1.25;
+    color:  #12171E;
 }
 
 .body-text p{
@@ -238,6 +251,7 @@ h1{
     margin: 0;
     font-family: "Archivo Black";
     font-size: 35px;
+    color:  #12171E;
 }
 
 #statistics .statistics p{
@@ -253,6 +267,125 @@ h1{
     height: 55%;
     width: 3px;
     margin: 0 0.25em 0 0.25em
+}
+
+/*OUR POPULAR COURSES PART*/
+
+.popular-courses{
+    background-color: #12171E;
+    width: 100%;
+    padding-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popular-courses .courses-text h2{
+    font-family: "Kanit";
+    font-size: 50px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.25;
+    color: #FDFDFD;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.courses-grid{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.course-grid{
+    height: 22vw;
+    width: 22vw;
+    background-color: #7FA1F7;
+    padding: 2em;
+    box-sizing: border-box;
+    transition: border-radius 0.5s;
+    cursor: pointer;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.course-img{
+    width: 18vw;
+    position: absolute;
+}
+
+.course-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popular-courses h3{
+    font-family: "Kanit";
+    font-size: 2.8vw;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1;
+    color: #FDFDFD;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    margin-bottom:0
+}
+
+.popular-courses .course-container .course-grid p{
+    color: #12171E;;
+    line-height: 1;
+    font-family: "Archivo";
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.5vw;
+    position: relative;
+} 
+
+#data-course:hover h3{
+    text-decoration: underline;
+}
+
+
+#data-course:hover .course-grid{
+    border-radius: 100%;
+    transition: box-shadow 0.5s;
+    transition: border-radius 0.5s;
+    box-shadow: 0px 0px 5px #7FA1F7;
+
+}
+
+#english-course:hover h3{
+    text-decoration: underline;
+}
+
+
+#english-course:hover .course-grid{
+    border-radius: 100%;
+    transition: box-shadow 0.5s;
+    transition: border-radius 0.5s;
+    box-shadow: 0px 0px 5px #7FA1F7;
+
+}
+
+#excel-course:hover h3{
+    text-decoration: underline;
+}
+
+
+#excel-course:hover .course-grid{
+    border-radius: 100%;
+    transition: box-shadow 0.5s;
+    transition: border-radius 0.5s;
+    box-shadow: 0px 0px 5px #7FA1F7;
+
 }
 
 
@@ -468,5 +601,37 @@ h1{
 
     .close{
         margin-left: 0.5em;
+    }
+
+    /*Popular courses*/
+
+    .courses-grid{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .course-grid{
+        width: 35vw;
+        height: 35vw;
+    }
+
+    .popular-courses .courses-text h2 {
+        font-size: 9vw;
+    }
+    
+    .course-container{
+        margin-bottom: 0.5em
+    }
+
+    .popular-courses h3 {
+        font-size: 5vw;
+    }
+
+    .popular-courses{
+        padding-bottom: 6em;
     }
 }
